@@ -4,7 +4,7 @@
   "description": "This is a POC of implementation of Blockchain, Node.js and MongoDB",
   "main": "app.js",
   "scripts": {
-    "test": "npm test",
+    "debug": "node --inspect start.js",
     "dev": "babel-node app.js"
   },
   "repository": {
@@ -23,6 +23,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "express-validator": "^6.3.1",
     "mongoose": "^5.8.10"
   },
   "devDependencies": {
@@ -31,6 +32,7 @@
     "@babel/node": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
     "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
     "nodemon": "^2.0.2"
   }
 }

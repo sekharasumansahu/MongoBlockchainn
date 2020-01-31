@@ -9,6 +9,7 @@
 //Import the mongoose package 
 export const mongoose = require("mongoose");
 export const Schema = mongoose.Schema;
+export const { check, body, validationResult} = require('express-validator');
 //Method to establish db connection
 export const getDbConn = async () => {
   try {

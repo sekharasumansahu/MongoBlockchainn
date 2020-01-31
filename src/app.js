@@ -18,6 +18,8 @@ app.use(bodyparser.json());
 
 require('dotenv').config();
 
+app.use(require('./routes/company'));
+
 app.listen(process.env.SERVER_PORT, (err) => {
   if (err) console.log('Error occured while running the server...!!!');
   console.log('Server running on ' + process.env.SERVER_PORT);
