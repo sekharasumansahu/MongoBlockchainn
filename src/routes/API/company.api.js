@@ -5,13 +5,14 @@
  * @subpackage routes/company
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
-import { testController } from '../controller/test';
+import { TestServices } from '../../services/test';
+import { TestNameValidation } from '../validation/company.validation';
 //Default route for checking server status
 router.get('/', (req, res)=>{
   res.status(200).send({msg : 'Server running...!!!', status : 0});
 });
 
 //Router for Compeny registrtion
-router.post('/test', testController);
+router.post('/test', TestNameValidation, TestServices.saveTest);
 
 module.exports = router;

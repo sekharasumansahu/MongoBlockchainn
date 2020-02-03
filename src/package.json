@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "debug": "node --inspect start.js",
-    "dev": "babel-node app.js"
+    "dev": "node start.js"
   },
   "repository": {
     "type": "git",
@@ -22,8 +22,10 @@
   "homepage": "https://github.com/sekharasumansahu/MongodbUniversity#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "esm": "^3.2.25",
     "express": "^4.17.1",
     "express-validator": "^6.3.1",
+    "mongodb": "^3.5.2",
     "mongoose": "^5.8.10"
   },
   "devDependencies": {
