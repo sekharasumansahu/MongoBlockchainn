@@ -1,1 +1,4 @@
 src/node_modules/*
+src/log/warn.log
+src/log/error.log
+src/log/info.log
