@@ -5,6 +5,12 @@
  * @subpackage config/response.config
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
+//Input validation
+export const {
+  check,
+  validationResult,
+  body
+} = require('express-validator');
 
 //Response handler class
 export class ResponseHandler {

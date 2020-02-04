@@ -5,7 +5,7 @@
  * @subpackage controller/company
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
-import { validationResult } from '../config/db.config';
+import { validationResult } from '../config/response.config'
 import { TestDAO } from '../dao/test';
 
 export class TestServices {
