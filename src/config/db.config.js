@@ -6,6 +6,11 @@
  * @subpackage config/db.config
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
+export const {
+  check,
+  validationResult,
+  body
+} = require('express-validator');
 
 
 const MongoClient = require('mongodb').MongoClient
