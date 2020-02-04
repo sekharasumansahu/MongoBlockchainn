@@ -3,11 +3,11 @@
  * db file is to store all the database configurations required for the application. it get the value from
  * the .env file present at src/.env
  * @package src/config
- * @subpackage config/db
+ * @subpackage config/db.config
  * @author Sekhara suman sahu <sekharasahu@gmail.com>
  */
 //Input validation
-export const {
+export const { 
   check,
   validationResult, body
 } = require('express-validator');

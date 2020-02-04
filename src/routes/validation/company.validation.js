@@ -9,5 +9,5 @@ import { check } from '../../config/db.config';
 
 export const TestNameValidation = [
   check('name').isString().withMessage('Name has to be of String type'),
-  check('name').isLength({min : 5, max : 7}).withMessage('Name has to be of length in between 5 to 7 character')
+  check('name').isLength({min : 5, max : 35}).withMessage('Name has to be of length in between 5 to 35 character')
 ];
